@@ -5,6 +5,9 @@ from .models import Customer, Product
 # Create your views here.
 '''def index (request):
   return HttpResponse("<h1> Using Shortcuts. My first webpage with PythonDjango!</h1>")'''
+def home(request):
+    context = {}
+    return render(request, 'myplpecom/home.html', context)
 
 def product_list(request):
   products = Product.objects.all()

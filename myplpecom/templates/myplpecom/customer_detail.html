@@ -1,8 +1,10 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'myplpecom/style.css' %}">
   <title>Customer Details</title>
 </head>
 <body>
@@ -18,7 +20,7 @@
   </div>
 
   <div>
-    <a href="{% url 'customer_list' %}">Back to Customer List</a>
+    <a href="{% url 'myplpecom:customer_list' %}">Back to Customer List</a>
   </div>
 </body>
 </html>
